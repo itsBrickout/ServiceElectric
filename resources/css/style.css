@@ -159,7 +159,7 @@ h3 {
 https://github.com/christianvorgitch/ServiceElectric/blob/master/hero.JPG?raw=true
 */
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url("hero.JPG");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(./hero.jpg);
     background-size: cover;
     background-position: center;
     height:100vh;
