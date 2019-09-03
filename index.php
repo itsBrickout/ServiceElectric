@@ -334,12 +334,32 @@
         
         
         <section class="section-form js--section-plans" id="plans">
-            <div class="row">
+            <div class="row" id="form">
                 <h2>We're happy to hear from you</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="mailer.php" class="contact-form">
+                    
                     <div class="row">
+                        
+                        <?php
+                if ($_GET['success']==1) {
+                    echo "<div class=\"form-messages success\">Thank You! Your message has been sent!
+                        </div>";
+                }
+                 if ($_GET['success']==-11) {
+                    echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.
+                        </div>";
+                }
+                                                                  
+                       
+                        ?>
+                    </div>
+                    
+                    
+                    <div class="row">                    
+                                                              
+                        
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
                         </div>
@@ -368,13 +388,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, Please
-                        </div>
+                    <div class="row">                      
+                        
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
