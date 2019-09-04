@@ -11,7 +11,8 @@ Dark Green: #00501b
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
    
 }
 
@@ -210,6 +211,8 @@ input[type=submit] {
 /* ------------------------------------------ */
 
 header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.70)),to(rgba(0, 0, 0, 0.70))), url(./img/hero.JPG);
+    background-image:-o-linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(./img/hero.JPG);
     background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(./img/hero.JPG);
     background-size: cover;
     background-position: center;
@@ -264,6 +267,8 @@ header{
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -295,7 +300,8 @@ header{
     left: 0;
     width: 100%;
     background-color: #00501b;
-    box-shadow: 0 2px 2px #efefef;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+            box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
 
@@ -445,11 +451,19 @@ header{
     margin-bottom: 5px;
 }
 
+.ryanlogo {
+    margin-top: 50px;
+    
+}
+
+
 /* ------------------------------------------ */
 /* Testimonials */
 /* ------------------------------------------ */
 
 .section-testimonials {    
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))),url(img/back-customers.jpg);    
+    background-image:-o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/back-customers.jpg);    
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -670,7 +684,9 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
-    transition: color: 0.2s;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
 }
 
 /* ------------------------------------------ */
@@ -696,7 +712,6 @@ footer p {
 .js--wp-3.animated {
     opacity: 1;
 } 
-
 
 
 
